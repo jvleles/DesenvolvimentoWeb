@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>Aula tabelas</title>
+    <style>
+    body{
+        font-family: 'Open Sans', sans-serif;
+        background-color: rgb(53, 54, 58);
+        color: #dadada;
+        text-align: center;
+    }
+    table{
+        width: 60%;
+    }
+    </style>
+</head>
+<body>
+    <h1>Tabela 1</h1>
+    <table border="1">
+        <tr>
+            <th>id</th>
+            <th>Nome</th>
+            <th>Curso</th>
+            <th>Turma</th>
+            <th>Media</th>
+            <th>Acoes</th>
+        </tr>
+
+
+        <tr>
+            <td>1</td>
+            <td>Joao Victor</td>
+            <td>Ciencias Computacao</td>
+            <td>2</td>
+            <td>10</td>
+            <td>
+                <button style="background-color: rgb(53, 54, 58); border: 0; cursor: pointer;">
+                    <img width="20" height="20" src="https://img.icons8.com/color/48/delete-sign--v1.png" alt="delete-sign--v1" title="Excluir"/>
+                </button>
+                <button style="background-color: rgb(53, 54, 58); border: 0; cursor: pointer;">
+                    <img width="20" height="20" src="https://img.icons8.com/fluency-systems-regular/48/edit--v1.png" alt="edit--v1" title="Editar"/>
+                </button>
+                <button style="background-color: rgb(53, 54, 58); border: 0; cursor: pointer;">
+                    <img width="20" height="20" src="https://img.icons8.com/windows/32/Resend-production-order.png" alt="Resend-production-order" title="Reenviar Acesso"/>
+                </button>   
+            </td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Billie</td>
+            <td>Cinema</td>
+            <td>4</td>
+            <td>10</td>
+            <td>
+                <button style="background-color: rgb(53, 54, 58); border: 0; cursor: pointer;">
+                    <img width="20" height="20" src="https://img.icons8.com/color/48/delete-sign--v1.png" alt="delete-sign--v1" title="Excluir"/>
+                </button>
+                <button style="background-color: rgb(53, 54, 58); border: 0; cursor: pointer;">
+                    <img width="20" height="20" src="https://img.icons8.com/fluency-systems-regular/48/edit--v1.png" alt="edit--v1" title="Editar"/>
+                </button>
+                <button style="background-color: rgb(53, 54, 58); border: 0; cursor: pointer;">
+                    <img width="20" height="20" src="https://img.icons8.com/windows/32/Resend-production-order.png" alt="Resend-production-order" title="Reenviar Acesso"/>
+                </button>   
+            </td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Eilish</td>
+            <td>Medicina</td>
+            <td>3</td>
+            <td>9.9</td>
+            <td>
+                <button style="background-color: rgb(53, 54, 58); border: 0; cursor: pointer;">
+                    <img width="20" height="20" src="https://img.icons8.com/color/48/delete-sign--v1.png" alt="delete-sign--v1" title="Excluir"/>
+                </button>
+                <button style="background-color: rgb(53, 54, 58); border: 0; cursor: pointer;">
+                    <img width="20" height="20" src="https://img.icons8.com/fluency-systems-regular/48/edit--v1.png" alt="edit--v1" title="Editar"/>
+                </button>
+                <button style="background-color: rgb(53, 54, 58); border: 0; cursor: pointer;">
+                    <img width="20" height="20" src="https://img.icons8.com/windows/32/Resend-production-order.png" alt="Resend-production-order" title="Reenviar Acesso"/>
+                </button>   
+            </td>
+        </tr>
+    </table>
+    <h2>Tabela2</h2>
+    <table border="1">
+        <tr>
+            <th>Nome</th>
+            <td>Billie</td>
+        </tr>
+        <tr>
+            <th rowspan="2">Phone</th>
+            <td>4002-8922</td>
+        </tr>
+        <tr>
+            <td>9999-7777</td>
+        </tr>
+    </table>
+    <h2>Tabela3</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th colspan="4">Lista de alunos</th>
+                <tr>
+                    <th>Nome</th>
+                    <th colspan="2">Notas</th>
+                    <th>Media</th>
+                </tr>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Billie</td>
+                <td>9.8</td>
+                <td>10.0</td>
+                <td>9.9</td>
+            </tr>
+            <tr>
+                <td>Jv</td>
+                <td>10</td>
+                <td>10</td>
+                <td>10</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h2>Tabela4</h2>
+
+    <table border="1">
+        <thead>
+            <tr>
+                <th rowspan="2">Heading</th>
+                <th>Students</th>
+                <th colspan="3">Details</th>
+            </tr>
+            <tr>
+                <th>id</th>
+                <th>Name</th>
+                <th>Department</th>
+                <th>Roll Number</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="4">Student List</th>
+                <td>1</td>
+                <td>Victor</td>
+                <td>Cumputer Science</td>
+                <td>12345</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Willians</td>
+                <td>Electronics</td>
+                <td>23456</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Harry</td>
+                <td>Electrical</td>
+                <td>34567</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Rick</td>
+                <td>Civil</td>
+                <td>45678</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
